@@ -17,13 +17,25 @@ rendering [Lucide icons](https://lucide.dev/) in your Latte / Nette application.
 composer require ozzyczech/latte-lucide-icons
 ```
 
-Requires PHP 8.1+
+Requires PHP 8.1+ and Nette 3.2+.
 
-Register Latte extension in your Nette application:
+Register the Latte extension in your Nette application by adding the following to your
+`services.neon`:
 
-```yaml
+```neon
 extensions:
   lucideIcons: OzzyCzech\LucideIcons\NetteExtension
+```
+
+Alternatively, you can register the extension in your `common.neon` file:
+
+```neon
+latte:
+	strictTypes: yes
+	strictParsing: yes
+	extensions:
+		- App\Presentation\Accessory\LatteExtension
+		- OzzyCzech\LucideIcons\LatteExtension
 ```
 
 You can also [register macro](https://latte.nette.org/en/custom-tags) manually:
