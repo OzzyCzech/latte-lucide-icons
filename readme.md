@@ -1,8 +1,8 @@
 <div align="center">
 
-![Packagist Version](https://img.shields.io/packagist/v/ozzyczech/latte-lucide-icons?style=for-the-badge)
-![Packagist License](https://img.shields.io/packagist/l/ozzyczech/latte-lucide-icons?style=for-the-badge)
-![Packagist Downloads](https://img.shields.io/packagist/dm/ozzyczech/latte-lucide-icons?style=for-the-badge)
+![Packagist Version](https://img.shields.io/packagist/v/OzzyCzech/latte-lucide-icons?style=for-the-badge)
+![Packagist License](https://img.shields.io/packagist/l/OzzyCzech/latte-lucide-icons?style=for-the-badge)
+![Packagist Downloads](https://img.shields.io/packagist/dm/OzzyCzech/latte-lucide-icons?style=for-the-badge)
 
 </div>
 
