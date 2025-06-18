@@ -35,11 +35,11 @@ extensions:
 
 ```neon
 latte:
-	strictTypes: yes
-	strictParsing: yes
-	extensions:
-		- App\Presentation\Accessory\LatteExtension
-		- OzzyCzech\LucideIcons\LatteExtension
+  strictTypes: yes
+  strictParsing: yes
+  extensions:
+    - App\Presentation\Accessory\LatteExtension
+    - OzzyCzech\LucideIcons\LatteExtension
 ```
 
 ### Option 3: Register the macro manually
