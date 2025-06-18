@@ -12,6 +12,22 @@ This package provides a [Latte](https://latte.nette.org/) macro `{lucide}` for
 rendering [Lucide icons](https://lucide.dev/) in your Latte / Nette application.
 
 
+## Installation
+
+```shell
+composer require ozzyczech/latte-lucide-icons
+```
+
+Requires PHP 8.1+
+
+Register Latte extension in your Nette application:
+
+```yaml
+extensions:
+	svgIcons: OzzyCzech\LucideIcons\NetteExtension
+
+```
+
 ## Maintenance
 
 This package is maintained by [Roman Ožana](https://ozana.cz/).
