@@ -51,7 +51,7 @@ class MySuperExtensions extends Latte\Extension {
  
 public function getTags(): array {
     return [
-      'lucide' => LucideNode::create(...),
+      'lucide' => OzzyCzech\LucideIcons\LucideNode::create(...),
     ];
   }
 }
