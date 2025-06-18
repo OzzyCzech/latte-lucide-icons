@@ -11,23 +11,27 @@
 This package provides a [Latte](https://latte.nette.org/) macro `{lucide}` for
 rendering [Lucide icons](https://lucide.dev/) in your Latte / Nette application.
 
-## Installation
+## 🚀 Installation
 
 ```shell
 composer require ozzyczech/latte-lucide-icons
 ```
 
-Requires PHP 8.1+ and Nette 3.2+.
+**Requirements:**
 
-Register the Latte extension in your Nette application by adding the following to your
-`services.neon`:
+- PHP 8.1+
+- Nette 3.2+
+
+## ⚙️ Setup
+
+### Option 1: Register via `services.neon`
 
 ```neon
 extensions:
   lucideIcons: OzzyCzech\LucideIcons\NetteExtension
 ```
 
-Alternatively, you can register the extension in your `common.neon` file:
+### Option 2: Register via `common.neon` (with custom Latte setup)
 
 ```neon
 latte:
@@ -37,6 +41,8 @@ latte:
 		- App\Presentation\Accessory\LatteExtension
 		- OzzyCzech\LucideIcons\LatteExtension
 ```
+
+### Option 3: Register the macro manually
 
 You can also [register macro](https://latte.nette.org/en/custom-tags) manually:
 
@@ -51,7 +57,9 @@ public function getTags(): array {
 }
 ```
 
-## Usage
+## 🧪 Usage
+
+Use the macro directly in your `.latte` templates:
 
 ```latte
 <button type="button">
@@ -59,7 +67,7 @@ public function getTags(): array {
 </button>
 ```
 
-will render following HTML:
+This renders the following HTML:
 
 ```html
 <button type="button">
@@ -71,10 +79,10 @@ will render following HTML:
 </button>
 ```
 
-## Maintenance
+## 👨‍🔧 Maintainer
 
-This package is maintained by [Roman Ožana](https://ozana.cz/).
+Maintained by [Roman Ožana](https://ozana.cz/). Contributions are welcome via issues or pull requests.
 
-## License
+## 📄 License
 
 Latte Lucide Icons is open-sourced software licensed under the [MIT license](/LICENSE).
