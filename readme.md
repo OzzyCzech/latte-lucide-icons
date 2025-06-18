@@ -23,7 +23,7 @@ Register Latte extension in your Nette application:
 
 ```yaml
 extensions:
-  svgIcons: OzzyCzech\LucideIcons\NetteExtension
+  lucideIcons: OzzyCzech\LucideIcons\NetteExtension
 ```
 
 You can also [register macro](https://latte.nette.org/en/custom-tags) manually:
