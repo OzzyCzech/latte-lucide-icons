@@ -9,7 +9,7 @@
 # Latte Lucide Icons
 
 This package provides a [Latte](https://latte.nette.org/) macro `{lucide}` for
-rendering [Lucide icons](https://lucide.dev/) in your Nette application.
+rendering [Lucide icons](https://lucide.dev/) in your Latte / Nette application.
 
 
 ## Maintenance
