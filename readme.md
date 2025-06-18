@@ -32,10 +32,10 @@ You can also [register macro](https://latte.nette.org/en/custom-tags) manually:
 class MySuperExtensions extends Latte\Extension {
  
 public function getTags(): array {
-		return [
-			'lucide' => LucideNode::create(...),
-		];
-	}
+    return [
+      'lucide' => LucideNode::create(...),
+    ];
+  }
 }
 ```
 
