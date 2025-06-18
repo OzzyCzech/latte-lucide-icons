@@ -11,7 +11,6 @@
 This package provides a [Latte](https://latte.nette.org/) macro `{lucide}` for
 rendering [Lucide icons](https://lucide.dev/) in your Latte / Nette application.
 
-
 ## Installation
 
 ```shell
@@ -24,8 +23,20 @@ Register Latte extension in your Nette application:
 
 ```yaml
 extensions:
-	svgIcons: OzzyCzech\LucideIcons\NetteExtension
+  svgIcons: OzzyCzech\LucideIcons\NetteExtension
+```
 
+You can also [register macro](https://latte.nette.org/en/custom-tags) manually:
+
+```php
+class MySuperExtensions extends Latte\Extension {
+ 
+public function getTags(): array {
+		return [
+			'lucide' => LucideNode::create(...),
+		];
+	}
+}
 ```
 
 ## Maintenance
