@@ -9,6 +9,15 @@
 			"homepage": "https://www.ozana.cz/"
 		}
 	],
+	"tags": [
+		"latte",
+		"latte-templates",
+		"lucide",
+		"lucide-icons",
+		"icons",
+		"nette",
+		"php"
+	],
 	"homepage": "https://github.com/OzzyCzech/latte-lucide-icons",
 	"require": {
 		"php": "^8.1",
