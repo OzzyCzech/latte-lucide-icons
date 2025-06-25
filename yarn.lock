@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-lucide-static@0.518.0:
-  version "0.518.0"
-  resolved "https://registry.yarnpkg.com/lucide-static/-/lucide-static-0.518.0.tgz#7ca46f3d52b49eac03b0201826b53540c7a9a2e8"
-  integrity sha512-hNGE2h0fgIqQVAzd4vjw5yU3oKO4/OR2EuQW6mJ4LDgnX+1tAOJo/nYNgqYK4T3oMomjIait0vFRBtgJOJtAiw==
+lucide-static@0.523.0:
+  version "0.523.0"
+  resolved "https://registry.yarnpkg.com/lucide-static/-/lucide-static-0.523.0.tgz#c9e242cecbf418bd500c3a605cbf3e060631e4b0"
+  integrity sha512-cI99TKixBkmhicQd9caKuSKsCpOGSa+OA7DNw9pgJyAW0fljqllt9OTXHzNmEuVuKzNy/anT92lnh+RcgdzABg==
