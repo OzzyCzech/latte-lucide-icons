@@ -1,0 +1,68 @@
+name: Update Lucide Icons
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # daily at 6:00 UTC
+  workflow_dispatch: # allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install current dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Get current version
+        id: current
+        run: echo "version=$(node -p "require('./node_modules/lucide-static/package.json').version")" >> $GITHUB_OUTPUT
+
+      - name: Upgrade lucide-static
+        run: yarn upgrade lucide-static
+
+      - name: Get new version
+        id: new
+        run: echo "version=$(node -p "require('./node_modules/lucide-static/package.json').version")" >> $GITHUB_OUTPUT
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet node_modules/lucide-static/icons/ yarn.lock; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Determine next tag
+        if: steps.changes.outputs.changed == 'true'
+        id: tag
+        run: |
+          latest=$(git tag --sort=-v:refname | head -1)
+          patch=${latest##*.}
+          prefix=${latest%.*}
+          echo "tag=${prefix}.$((patch + 1))" >> $GITHUB_OUTPUT
+
+      - name: Commit and tag
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f node_modules/lucide-static/icons/ yarn.lock composer.lock
+          git commit -m "Update icons (lucide-static ${{ steps.new.outputs.version }})"
+          git tag ${{ steps.tag.outputs.tag }}
+          git push origin main --tags
+
+      - name: Summary
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          echo "### Updated Lucide Icons" >> $GITHUB_STEP_SUMMARY
+          echo "- **lucide-static**: ${{ steps.current.outputs.version }} → ${{ steps.new.outputs.version }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Tag**: ${{ steps.tag.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
