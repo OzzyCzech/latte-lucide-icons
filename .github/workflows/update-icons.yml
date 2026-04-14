@@ -55,7 +55,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f node_modules/lucide-static/icons/ yarn.lock composer.lock
+          git add -f node_modules/lucide-static/icons/ yarn.lock
           git commit -m "Update icons (lucide-static ${{ steps.new.outputs.version }})"
           git tag ${{ steps.tag.outputs.tag }}
           git push origin main --tags

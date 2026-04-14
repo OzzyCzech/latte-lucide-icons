@@ -1,2 +1,3 @@
 /vendor/
-!node_modules/lucide-static/icons
+/node_modules/
+!node_modules/lucide-static/icons/
