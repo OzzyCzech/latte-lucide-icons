@@ -22,14 +22,14 @@ jobs:
           node-version: '25'
 
       - name: Install current dependencies
-        run: yarn install --frozen-lockfile
+        run: npm install
 
       - name: Get current version
         id: current
         run: echo "version=$(node -p "require('./node_modules/lucide-static/package.json').version")" >> $GITHUB_OUTPUT
 
       - name: Upgrade lucide-static
-        run: yarn upgrade lucide-static
+        run: npm update lucide-static
 
       - name: Get new version
         id: new
@@ -38,7 +38,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          if git diff --quiet node_modules/lucide-static/icons/ yarn.lock; then
+          if git diff --quiet node_modules/lucide-static/icons/; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -49,7 +49,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f node_modules/lucide-static/icons/ yarn.lock
+          git add -f node_modules/lucide-static/icons/
           git commit -m "Update icons (lucide-static ${{ steps.new.outputs.version }})"
           git tag v${{ steps.new.outputs.version }}
           git push origin main --tags
