@@ -1,6 +1,6 @@
 {
 	"private": true,
 	"dependencies": {
-		"lucide-static": "^1.7.0"
+		"lucide-static": "latest"
 	}
 }

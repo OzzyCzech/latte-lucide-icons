@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "5d932e27361cb3ba8b63799a1277f6fdf98d5a00"
+                "reference": "02e7e2b7058af94bae1962afb9d6e32082cf0c5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/5d932e27361cb3ba8b63799a1277f6fdf98d5a00",
-                "reference": "5d932e27361cb3ba8b63799a1277f6fdf98d5a00",
+                "url": "https://api.github.com/repos/nette/latte/zipball/02e7e2b7058af94bae1962afb9d6e32082cf0c5d",
+                "reference": "02e7e2b7058af94bae1962afb9d6e32082cf0c5d",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
                 "nette/php-generator": "to use tag {templatePrint}",
                 "nette/utils": "to use filter |webalize"
             },
-            "time": "2026-03-26T00:33:25+00:00",
+            "time": "2026-04-09T23:26:32+00:00",
             "default-branch": true,
             "bin": [
                 "bin/latte-lint"
@@ -534,12 +534,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/php-generator.git",
-                "reference": "4b54db13b80ac095cf26534d8c4097ab398658da"
+                "reference": "0deda454f244df9adccf56b815840c37cbee7a80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/php-generator/zipball/4b54db13b80ac095cf26534d8c4097ab398658da",
-                "reference": "4b54db13b80ac095cf26534d8c4097ab398658da",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/0deda454f244df9adccf56b815840c37cbee7a80",
+                "reference": "0deda454f244df9adccf56b815840c37cbee7a80",
                 "shasum": ""
             },
             "require": {
@@ -558,7 +558,7 @@
             "suggest": {
                 "nikic/php-parser": "to use ClassType::from(withBodies: true) & ClassType::fromCode()"
             },
-            "time": "2026-03-09T02:40:35+00:00",
+            "time": "2026-04-06T20:58:48+00:00",
             "default-branch": true,
             "type": "library",
             "extra": {
@@ -757,12 +757,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/schema.git",
-                "reference": "bc3e09dcf65020fc60346a6d7e530ff93de01abb"
+                "reference": "0a0768c7a2a01008831c9f3896a27e0a1f9fffc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/schema/zipball/bc3e09dcf65020fc60346a6d7e530ff93de01abb",
-                "reference": "bc3e09dcf65020fc60346a6d7e530ff93de01abb",
+                "url": "https://api.github.com/repos/nette/schema/zipball/0a0768c7a2a01008831c9f3896a27e0a1f9fffc1",
+                "reference": "0a0768c7a2a01008831c9f3896a27e0a1f9fffc1",
                 "shasum": ""
             },
             "require": {
@@ -776,7 +776,7 @@
                 "phpstan/phpstan": "^2.1.39@stable",
                 "tracy/tracy": "^2.8"
             },
-            "time": "2026-03-09T01:36:06+00:00",
+            "time": "2026-04-06T20:52:42+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {

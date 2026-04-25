@@ -3,7 +3,7 @@
         'name' => 'ozzyczech/latte-lucide-icons',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '81424293f9f901fef6fd690cb24049f382625366',
+        'reference' => '394510c66da40ca8ec6b7e28f844dfdb701a94e3',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'latte/latte' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '5d932e27361cb3ba8b63799a1277f6fdf98d5a00',
+            'reference' => '02e7e2b7058af94bae1962afb9d6e32082cf0c5d',
             'type' => 'library',
             'install_path' => __DIR__ . '/../latte/latte',
             'aliases' => array(
@@ -71,7 +71,7 @@
         'nette/php-generator' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '4b54db13b80ac095cf26534d8c4097ab398658da',
+            'reference' => '0deda454f244df9adccf56b815840c37cbee7a80',
             'type' => 'library',
             'install_path' => __DIR__ . '/../nette/php-generator',
             'aliases' => array(
@@ -102,7 +102,7 @@
         'nette/schema' => array(
             'pretty_version' => 'v1.3.x-dev',
             'version' => '1.3.9999999.9999999-dev',
-            'reference' => 'bc3e09dcf65020fc60346a6d7e530ff93de01abb',
+            'reference' => '0a0768c7a2a01008831c9f3896a27e0a1f9fffc1',
             'type' => 'library',
             'install_path' => __DIR__ . '/../nette/schema',
             'aliases' => array(),
@@ -122,7 +122,7 @@
         'ozzyczech/latte-lucide-icons' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '81424293f9f901fef6fd690cb24049f382625366',
+            'reference' => '394510c66da40ca8ec6b7e28f844dfdb701a94e3',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
