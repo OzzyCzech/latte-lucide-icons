@@ -21,15 +21,12 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Install current dependencies
-        run: npm install
-
       - name: Get current version
         id: current
-        run: echo "version=$(node -p "require('./node_modules/lucide-static/package.json').version")" >> $GITHUB_OUTPUT
+        run: echo "version=$(git describe --tags --abbrev=0 | sed 's/^v//')" >> $GITHUB_OUTPUT
 
-      - name: Upgrade lucide-static
-        run: npm update lucide-static
+      - name: Install latest lucide-static
+        run: npm install
 
       - name: Get new version
         id: new
