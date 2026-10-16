@@ -6,6 +6,6 @@ upgrade: upgrade.icons
 
 upgrade.icons:
 	$(info ==== Upgrade Lucide icons ====)
-	yarn upgrade lucide-static
+	npm update lucide-static
 
 .PHONY: $(MAKECMDGOALS)
